@@ -1,0 +1,24 @@
+@import "../_variables.scss";
+.primary-button {
+  min-width: 100px;
+  height: 34px;
+  border-radius: 80px;
+  background-color: $primary-normal-button;
+  outline: none;
+  border: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 1px 19px;
+  @include body;
+  &:hover {
+    background-color: $secondary-hover-button;
+  }
+  &:disabled {
+    background-color: $background-disabled-button;
+    color: rgba(255, 255, 255, 0.87);
+    cursor: not-allowed;
+  }
+}

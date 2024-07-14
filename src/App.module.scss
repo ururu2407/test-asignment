@@ -1,0 +1,102 @@
+@import "./scss/variables";
+@import "./scss/components/buttons";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin: 0 auto;
+  display: grid;
+  margin-bottom: 160px;
+  @media screen and (min-width: 1170px) {
+    width: 1170px;
+    margin: 0 auto 160px auto;
+  }
+  .container {
+    display: grid;
+    gap: 140px;
+    .content {
+      position: relative;
+      height: 500px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (min-width: 1024px) {
+        height: 650px;
+      }
+      .contentImage {
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+      }
+      img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        // object-fit: cover;
+        scale: 1.7;
+        bottom: 158px;
+        z-index: 0;
+        @media screen and (min-width: 1024px) {
+          bottom: 228px;
+        }
+      }
+      .contentText {
+        position: absolute;
+        padding: 40px 16px 71px 16px;
+        max-height: 500px;
+        // height: 100%;
+        // position: relative;
+        z-index: 100;
+        display: grid;
+        gap: 32px;
+        align-items: center;
+        @media screen and (min-width: 768px) {
+          padding: 0;
+          width: 380px;
+        }
+        .text {
+          display: grid;
+          gap: 21px;
+          color: #fff;
+          h1 {
+            @include heading-1;
+            text-align: center;
+          }
+          p {
+            @include body;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .users {
+      padding: 0 16px;
+      display: grid;
+      gap: 50px;
+      @media screen and (min-width: 768px) {
+        padding: 0 32px;
+      }
+      @media screen and (min-width: 1024px) {
+        padding: 0 60px;
+      }
+      @media screen and (min-width: 1170px) {
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}
+.error {
+  color: red;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}

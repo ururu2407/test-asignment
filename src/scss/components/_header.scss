@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  @media screen and (min-width: 768px) {
+    padding: 0 32px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 0 60px;
+  }
+  @media screen and (min-width: 1170px) {
+    padding: 0;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 26px;
+    p {
+      width: 104px;
+    }
+  }
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+}

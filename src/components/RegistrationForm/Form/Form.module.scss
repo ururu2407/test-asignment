@@ -1,0 +1,16 @@
+form {
+  display: grid;
+  gap: 50px;
+  @media screen and (min-width: 768px) {
+    width: 380px;
+  }
+  .position {
+    margin-top: -11px;
+    display: grid;
+    gap: 11px;
+  }
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
